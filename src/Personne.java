@@ -1,4 +1,4 @@
-public class Personne {
+public class Personne  implements Comparable<Personne>{
     private int id ;
     private int age ;
     private String nom ;
@@ -51,5 +51,10 @@ public class Personne {
                 ", nom='" + nom + '\'' +
                 ", prenom='" + prenom + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Personne autrePersonne) {
+        return Integer.compare(this.id, autrePersonne.getId());
     }
 }

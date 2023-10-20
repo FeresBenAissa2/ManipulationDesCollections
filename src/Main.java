@@ -71,8 +71,8 @@ public class Main {
         // trier la liste de personne
         Collections.sort(personneList);
         System.out.println(personneList);
-      //  Collections.sort(personneList,Collections.reverseOrder());
-      //  System.out.println(personneList);
+        Collections.sort(personneList,Collections.reverseOrder());
+        System.out.println(personneList);
 
 
     }
